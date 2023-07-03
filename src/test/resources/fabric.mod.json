@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "blf-scheduler-test",
+  "version": "0.1.0",
+
+  "name": "Blf Scheduler Test",
+  "description": "Testing the Blf Scheduler.",
+  "authors": [
+    "Blumbo"
+  ],
+
+  "environment": "server",
+  "entrypoints": {
+    "factory": [
+      "net.blumbo.blfschedulertest.Main"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.9.0",
+    "blf-scheduler": ">=1.0.0",
+    "minecraft": "1.16.2-1.16.combat-6"
+  }
+}

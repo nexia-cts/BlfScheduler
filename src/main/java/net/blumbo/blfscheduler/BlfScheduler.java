@@ -1,23 +1,19 @@
 package net.blumbo.blfscheduler;
 
-import com.mojang.logging.LogUtils;
-import net.fabricmc.api.ModInitializer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.slf4j.Logger;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class BlfScheduler implements ModInitializer {
+public class BlfScheduler {
 
     private static long ticks = 0L;
     private static final HashMap<Long, List<BlfRunnable>> runnableMap = new HashMap<>();
-    private static final Logger LOGGER = LogUtils.getLogger();
-
-    @Override
-    public void onInitialize() {}
+    private static final Logger LOGGER = LogManager.getLogger("blf-scheduler");
 
     public static BlfRunnable delay(long delay, @NotNull BlfRunnable runnable) {
         delay = properDelayCheck(delay);
