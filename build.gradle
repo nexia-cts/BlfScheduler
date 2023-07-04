@@ -67,7 +67,7 @@ publishing {
 
     repositories {
         maven {
-            name = "blf-scheduler"
+            name = "BlfScheduler"
             url = "https://maven.pkg.github.com/nexia-cts/BlfScheduler"
             credentials {
                 username = System.getenv("USERNAME")
