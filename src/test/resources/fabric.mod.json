@@ -19,6 +19,6 @@
   "depends": {
     "fabricloader": ">=0.9.0",
     "blf-scheduler": ">=1.0.0",
-    "minecraft": "1.16.2-1.16.combat-6"
+    "minecraft": ["1.16.3-combat.8.c", "1.16.2-1.16.combat-6"]
   }
 }

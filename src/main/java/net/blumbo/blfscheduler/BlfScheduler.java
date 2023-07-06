@@ -13,7 +13,7 @@ public class BlfScheduler {
 
     private static long ticks = 0L;
     private static final HashMap<Long, List<BlfRunnable>> runnableMap = new HashMap<>();
-    private static final Logger LOGGER = LogManager.getLogger("blf-scheduler");
+    private static final Logger LOGGER = LogManager.getLogger("blfscheduler");
 
     public static BlfRunnable delay(long delay, @NotNull BlfRunnable runnable) {
         delay = properDelayCheck(delay);
